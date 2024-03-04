@@ -2,7 +2,7 @@ resource "azurerm_resource_group" "resource_group_tf_rasmoo" {
   name     = "resource_group_tf_rasmoo"
   location = var.location
 
-  tags = local.default-tags
+  tags = var.default_tags
 }
 resource "azurerm_storage_account" "storage_account_tf_rasmoo" {
   name                     = "storageaccount_tf_rasmoo"
@@ -12,7 +12,7 @@ resource "azurerm_storage_account" "storage_account_tf_rasmoo" {
   account_replication_type = "LRS"
 
   tags = merge(
-    local.default-tags,
+    var.default_tags,
     {
       environment = "dev",
     }
