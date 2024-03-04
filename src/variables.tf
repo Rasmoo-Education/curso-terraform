@@ -6,13 +6,10 @@ variable "location" {
   nullable    = false
 }
 
-variable "default_tags" {
-  type = map(string)
+variable "environment" {
+  type    = string
+  default = "DEV"
 
-  default = {
-    managed-by = "terraform"
-    owner      = "rasmoo-course"
-  }
-
-  description = "Valores padroes a serem utilazados como tags nos recursos"
+  description = "Ambiente onde serão deployados os recursos"
+  nullable    = false
 }
