@@ -1,6 +1,8 @@
 # Curso Terraform
 
 Bem-vindo ao curso Terraform da escola RASMOO!
+**O código referente a cada aula está dividido por branches** cujos nomes seguem o padrão `aula-<número_da_aula>`
+
 
 ## O que é Terraform?
 
